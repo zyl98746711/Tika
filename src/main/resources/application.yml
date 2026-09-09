@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: tika-rag
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+tika:
+  parse:
+    timeout-seconds: 300
+    max-content-length: -1
+
+qdrant:
+  base-url: http://localhost:6333
+  collection-name: documents
+  vector-size: 768
+
+ollama:
+  base-url: http://localhost:11434
+  embedding-model: nomic-embed-text
