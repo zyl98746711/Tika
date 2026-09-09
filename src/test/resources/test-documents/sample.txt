@@ -1,0 +1,25 @@
+This is a plain text document for testing the RAG document parsing service.
+
+The Apache Tika toolkit provides a unified interface for extracting text and metadata
+from a wide variety of document formats. This includes PDF files, Microsoft Office
+documents, HTML pages, and many other formats.
+
+Our service builds on top of Tika to provide a REST API for document parsing and
+text chunking, specifically designed for RAG (Retrieval-Augmented Generation) pipelines.
+
+The chunking strategies available include fixed-size windowing, token-based splitting,
+and hierarchical structure-aware segmentation. Each strategy has its strengths depending
+on the use case and document type.
+
+Fixed-size chunking is the simplest approach. It divides text into chunks of a specified
+character count with an optional overlap between consecutive chunks. This works well for
+documents without clear structural boundaries.
+
+Token-based chunking provides better alignment with language model context windows.
+Since LLMs process text as tokens rather than characters, splitting by token count
+ensures more predictable chunk sizes from the model's perspective.
+
+Hierarchical chunking is the most sophisticated approach. It analyzes the document's
+heading structure and paragraph boundaries to create semantically coherent chunks.
+This is particularly useful for technical documents, reports, and articles where
+maintaining context within sections is important.

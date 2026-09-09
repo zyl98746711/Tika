@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample HTML Document</title>
+</head>
+<body>
+    <h1>RAG Document Parsing Service</h1>
+
+    <p>This is a sample HTML document for testing the RAG document parsing service.
+    It contains structured content with headings and paragraphs.</p>
+
+    <h2>Overview</h2>
+    <p>The service uses Apache Tika to extract text and metadata from various document formats.
+    It supports PDF, DOCX, PPTX, XLSX, HTML, Markdown, and many other formats.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Multi-format document parsing</li>
+        <li>Metadata extraction</li>
+        <li>Multiple chunking strategies</li>
+        <li>REST API interface</li>
+    </ul>
+
+    <h2>Technical Details</h2>
+    <p>Built with Spring Boot 3 and JDK 21, the service provides a high-performance
+    document processing pipeline optimized for RAG applications.</p>
+
+    <h3>Parsing Pipeline</h3>
+    <p>The parsing pipeline consists of file type detection, content extraction,
+    metadata extraction, and text normalization. Each step is designed to handle
+    edge cases and provide robust error handling.</p>
+
+    <h3>Chunking Strategies</h3>
+    <p>Three chunking strategies are available: fixed-size, token-based, and hierarchical.
+    Each strategy produces chunks with different characteristics suited to different use cases.</p>
+
+    <h2>Conclusion</h2>
+    <p>This HTML document demonstrates the service's ability to parse structured web content
+    and extract meaningful text for RAG processing.</p>
+</body>
+</html>
